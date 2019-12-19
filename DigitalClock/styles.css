@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(75, 107, 138);
+}
+
+.clock{
+    font-size: 4em;
+    text-align: center;
+    margin: auto;
+    font-family: fantasy;
+    color: rgb(29, 29, 29);
+}
+
+
+.day{
+    font-size: 4em;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: fantasy;
+    color: rgb(29, 29, 29);
+}
+
+.day span{
+    text-emphasis: bold;
+}
+
