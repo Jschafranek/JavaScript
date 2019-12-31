@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Ea$y Chat</title>
+</head>
+<body>
+
+    <!-- Container & Title -->
+
+    <div class="container my-4">
+        <h1 class="my-4 text-center">Ea$y Chat</h1>
+
+    <!-- Buttons for Chatrooms -->
+
+    <div class="chat-rooms mb-3 text-center">
+        <div class="my-2">Choose a Chatroom:</div>
+        <button class="btn" id="general">#General</button>
+        <button class="btn" id="gaming">#Gaming</button>
+        <button class="btn" id="music">#Music</button>
+        <button class="btn" id="random">#Random</button>
+    </div>
+
+    <!-- Chat List or Window -->
+
+    <div class="chat-window">
+        <ul class="chat-list list-group"></ul>
+    </div>
+
+    <!-- New Chat Form -->
+    <form class="new-chat my-3">
+     <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">Your Message:</div>
+        </div>
+        <input type="text" id="message" class="form-control" required>
+        <div class="input-group-append">
+            <input type="submit" class="btn" value="Send">
+        </div>
+     </div>
+    </form>
+
+    <!-- Update Name Form -->
+    <form class="new-name my-3">
+        <div class="input-group">
+            <div class="input-group-prepend">
+            <div class="input-group-text">Update Name:</div>
+        </div>
+        <input type="text" id="name" class="form-control" required>
+        <div class="input-group-append">
+            <input type="submit" class="btn" value="Update">
+        </div>
+        </div>
+        <div class="update-mssg"></div>
+    </form>
+
+</div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDqPoJe7aqR5_TStqebb_pLtKvdJY95ZHA",
+        authDomain: "chatplication.firebaseapp.com",
+        databaseURL: "https://chatplication.firebaseio.com",
+        projectId: "chatplication",
+        storageBucket: "chatplication.appspot.com",
+        messagingSenderId: "795684696445",
+        appId: "1:795684696445:web:3247e3527f9c779a315c14",
+        measurementId: "G-5LD49YCND9"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    </script>
+
+    <script src="scripts/chat.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
+
+</body>
+</html>
