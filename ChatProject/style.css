@@ -17,3 +17,21 @@ body{
     background: rgba(0,0,0,0.8);
     color: whitesmoke;
 }
+
+ul{
+    color:rgba(0, 136, 247, 0.753);
+}
+
+.username{
+    font-weight: bold;
+}
+
+.time{
+    font-size: 0.7em;
+    color: rgba(2, 86, 155, 0.753);
+}
+
+.update-mssg{
+    text-align: center;
+    margin: 20px auto;
+}
